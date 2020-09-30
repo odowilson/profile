@@ -544,9 +544,320 @@ footer{
 }
 
 
+/* For mobile */
 
+@media only screen and (max-width: 768px) {
 
+    h1{
+        font-family: 'Jura', sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        margin: auto;
+        color: white;
+    }
 
+    h2{
+        font-family: 'Jura', sans-serif;
+        color: white;
+    }
+    
+    h3{
+        color: white;
+        font-family: 'Jura', sans-serif;
+        font-weight: 300;
+    }
+    
+    h4{
+        font-family: 'Spinnaker', sans-serif;
+        margin: auto;
+        font-weight: 100;
+        color: white; 
+    }
+    
+    p{
+        font-family: 'Exo', sans-serif;
+        margin: auto;
+        font-weight: 200;
+        color: white;
+    }
+    
+    a{
+        color:white;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #symbol{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1001;
+        font-size: 38px;
+        font-weight: 300;
+    }
+    
+    #loading-screen{
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        padding: 8rem;
+        z-index: 1001;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .loader{
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+    }
+    
+    .signature{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        stroke-dasharray: 200;
+        stroke-dashoffset: 800;
+        animation: sign 16s linear;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+
+    #navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: black;
+    }
+    
+    .cantacon{
+        height: 37px;
+        width: 37px;
+    }
+
+    #navBar h3{
+        font-family: 'Jura', sans-serif;
+    }
+    
+    #navBar div{
+        margin: 25px 25px;
+    }
+    
+    .cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .beside-content{
+        margin-left: 0;
+    }
+    
+    #sidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: black;
+        align-self: flex-end;
+    }
+    
+    #sidebar div{
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .contents{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 80px;
+        margin-left: 20px;
+        z-index: 1000;
+    }
+    
+    .name{
+        width: 20rem;
+    }
+    
+    .intro{
+        margin-top: 1.5rem;
+        margin-bottom: 80px;
+        padding-right: 0px;
+        text-align: left;
+        padding: 0 10px 0 0;
+        width: 500px;
+    }
+    
+    .hello{
+        overflow: hidden;
+        animation: introduce 17s steps(93);
+        white-space: nowrap;
+        width: 64.3ch;
+        border-right: 2px solid white;
+    }
+
+    .mobileHello{
+        text-align: left;
+    }
+
+    .mobileHello p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .mobileHello1{
+        overflow: hidden;
+        animation: Hello1 3s steps(16);
+        white-space: nowrap;
+        width: 10.5ch;
+        border-right: none;
+        margin-left: 0;
+    }
+
+    @keyframes Hello1{
+        0%{
+            width: 0ch;
+            border-right: 2px solid white;
+        }
+        /* 99%{
+            width: 8ch;
+            border-right: 2px solid white;
+        } */
+        100%{
+            width: 10ch;
+            border-right: 2px solid white;
+        }
+    }
+
+    .mobileHello2{
+        overflow: hidden;
+        animation: Hello2 7s steps(34);
+        white-space: nowrap;
+        width: 29ch;
+        border-right: none;
+        margin-left: 0;
+    }
+
+    @keyframes Hello2{
+        0%{
+            width: 0ch;
+            border-right: 2px solid white;
+        }
+        
+        100%{
+            width: 30ch;
+            border-right: 2px solid white;
+        }
+    }
+
+    .mobileHello3{
+        overflow: hidden;
+        animation: Hello3 7s steps(26);
+        white-space: nowrap;
+        width: 26ch;
+        border-right: none;
+        margin-left: 0;
+    }
+
+    @keyframes Hello3{
+        0%{
+            width: 0ch;
+            border-right: 2px solid white;
+        }
+        
+        100%{
+            width: 26ch;
+            border-right: 2px solid white;
+        }
+    }
+
+    #sets{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #sets div{
+        margin-right: 0px;
+        width: 333px;
+    }
+    
+    .split{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .line{
+        stroke-dasharray: 80;
+        stroke-dashoffset: 80;
+        animation: underline 8s linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .line2{
+        stroke-dasharray: 80;
+        stroke-dashoffset: 80;
+        animation: underline 8s linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes underline {
+        to{
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    .split-list{
+        margin-right: 90px;
+    }
+    
+    .split-list p{
+        font-family: 'Exo', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .works-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 94px 30px 30px 100px;
+    }
+    
+    .icon:hover{
+        cursor: none;
+    }
+    
+    .portfolio:hover{
+        cursor: none;
+    }
+    
+    .place{
+        stroke: white;
+    }
+    
+    #line{
+       
+    }
+
+}
 
 
 
