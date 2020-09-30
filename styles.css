@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+}
+
+body{
+    background-color: #030303;
+}
+
+h1{
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin: auto;
+    color: white;
+}
+
+h2{
+    font-family: 'Jura', sans-serif;
+    color: white;
+}
+
+h3{
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+}
+
+h4{
+    font-family: 'Spinnaker', sans-serif;
+    margin: auto;
+    font-weight: 200;
+    color: white; 
+}
+
+p{
+    font-family: 'Exo', sans-serif;
+    margin: auto;
+    font-weight: 200;
+    color: white;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#symbol{
+    position: absolute;
+    top: 46%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+#loading-screen{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem;
+    z-index: 1001;
+    opacity: 0.8;
+}
+
+.loader{
+    background-color: black;
+    position: relative;
+    top: 32%;
+    left: 45%;
+    width: 350px;
+}
+
+.signature{
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: sign 16s linear;
+}
+
+@keyframes sign{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+#navBar h3{
+    font-family: 'Jura', sans-serif;
+}
+
+#navBar div{
+    margin: 25px 45px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.beside-content{
+    margin-left: 40px;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+}
+
+#sidebar div{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.contents{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 120px;
+    margin-left: 80px;
+    z-index: 1000;
+}
+
+.name{
+    width: 40rem;
+}
+
+.intro{
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+    padding-right: 4px;
+    text-align: left;
+}
+
+.hello{
+    overflow: hidden;
+    animation: introduce 17s steps(93);
+    white-space: nowrap;
+    width: 64.3ch;
+    border-right: 2px solid white;
+}
+
+@keyframes introduce{
+    0%{
+      width: 0ch;
+    }
+    100%{
+        width: 64.3ch;
+    }
+}
+
+#sets{
+    display: flex;
+    flex-direction: row;
+}
+
+#sets div{
+    margin-right: 70px;
+}
+
+.split{
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: underline 8s linear;
+    animation-iteration-count: infinite;
+}
+
+.line2{
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: underline 8s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes underline {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.split-list{
+    margin-right: 60px;
+}
+
+.split-list p{
+    font-family: 'Exo', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.works-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 94px 30px 30px 100px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.portfolio:hover{
+    cursor: pointer;
+}
+
+.place{
+    stroke: white;
+}
+
+#line{
+   
+}
+
+footer{
+    margin: 0 600px;
+}
+
+
+
+/* Services Page */
+
+
+
+#servicesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panel{
+    margin-left: 70px;
+    width: 500px;
+    animation: 5s ease-in linear;
+}
+
+.s{
+    position: relative;
+    top: 3px;
+}
+
+#pitch{
+    margin-top: 100px;
+    width: 300px;
+    padding: 3px;
+}
+
+#pitch p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: smaller;
+    line-height: 24px;
+}
+
+#contact{
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 270px;
+}
+
+#contact:hover{
+    cursor: pointer;
+}
+
+.Arrow{
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: move 3s linear alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+#sevNav{
+    align-self: flex-end;
+}
+
+#letter{
+    margin-top: 260px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#letter div{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#letter div p{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+}
+
+#contactIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 120px;
+}
+
+#contactIcons a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px 40px 30px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.6s;
+    height: 30px;
+    border-radius: 2px;
+}
+
+#contactIcons a:hover{
+    color: black;
+    background: white;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    transform: translateY(-10px);
+    transition-delay: 1s;
+}
+
+#contactIcons a:hover i{
+    color: black;
+    transition-delay: 1s;
+}
+
+#contactIcons a span{
+    position: absolute;
+    display: block;
+}
+
+#contactIcons a span:nth-child(1){
+    top: 0px;
+    left: -100px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white);
+}
+
+#contactIcons a:hover span:nth-child(1){
+    left: 100px;
+    transition: 1s;
+}
+
+#contactIcons a span:nth-child(3){
+    bottom: 0;
+    right: -100px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, white);
+}
+
+#contactIcons a:hover span:nth-child(3){
+    right: 100px;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#contactIcons a span:nth-child(2){
+    top: -130px;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+}
+
+#contactIcons a:hover span:nth-child(2){
+    top: 100px;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#contactIcons a span:nth-child(4){
+    bottom: -130px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+}
+
+#contactIcons a:hover span:nth-child(4){
+    bottom: 100px;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* Works.html */
+
+
+#navBar-work{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+
+#navBar-work div{
+    margin: 25px 45px 5px;
+}
+
+.icon-work{
+    stroke-dasharray: 186;
+    stroke-dashoffset: 186;
+    animation: anima 8s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anima{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.cont-work{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    margin: 0 20px;
+    background: #fff;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+
+.works-div{
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    margin-right: 0;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+    width: 100%;
+}
+
+.works-div .card{
+    position: relative;
+    width: 100%;
+    background: rgb(27, 27, 27);
+    margin: 0 auto;
+    padding: 100px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.works-div .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    transition: 0.5s;
+}
+
+.works-div .card:hover .layer{
+    top: 0;
+}
+
+.works-div .card .content{
+    position: relative;
+    z-index: 1002;
+}
+
+.works-div .card .content p{
+    /* font-size: 10px;
+    line-height: 24px; */
+    margin-bottom: 20px;
+}
+
+.works-div .card .content .imgBox{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 4px white solid;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0,0, 0.2)
+}
+
+.works-div .card .content h3 span{
+    color: #03a9f4;
+    transition: 0.5s;
+}
+
+.works-div .card:hover .content h3 span{
+    color: white;
+}
+
+.beside-content-work{
+    margin-top: 52px;
+}
+
+#sidebar-work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.works-icon-works{
+    position: relative;
+    bottom: 10px;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
