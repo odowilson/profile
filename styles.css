@@ -670,7 +670,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 70vh;
+        height: 75vh;
     }
     
     .beside-content{
