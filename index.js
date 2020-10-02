@@ -7,11 +7,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 if (isMobile===true) {
     
-    $(document).ready(function() {
-        var el = $('.hello');
-        el.addClass('.newHello');
-        el.removeClass('.hello');
-    });
+    $(".hello").remove();
 
     $(document).ready(function() {
         $("#sets").hide();
@@ -21,9 +17,8 @@ if (isMobile===true) {
         $(".name").hide();
         $("[id=homma]").hide();
         $(".hello").remove();
-        $(".mobileHello1").hide();
-        $(".mobileHello2").hide();
-        $(".mobileHello3").hide();
+        $(".mobileHello").hide();
+        $(".skills-for-mobile").hide();
     
         setTimeout(function(){
             $('#loading-screen').remove();
@@ -32,36 +27,19 @@ if (isMobile===true) {
             $("#symbol").remove();
             $("[id=homma]").fadeIn(4000);
         }, 10000);
-    
-        setTimeout(() => {
-            $(".name").fadeIn(4000);
-        }, 16000);
-    
-        setTimeout(() => {
-            $(".mobileHello1").show();
-        }, 23000);
 
         setTimeout(() => {
-            $(".mobileHello2").show();
-        }, 27000);
+            $(".name").fadeIn(3000);
+        }, 17000);
 
         setTimeout(() => {
-            $(".mobileHello3").show();
-        }, 35000);
-    
+            $(".mobileHello").fadeIn(7000);
+        }, 26000);
+
         setTimeout(() => {
-            $(".panel").fadeIn(10000);
-            setTimeout(() => {
-                $("#line2").toggleClass("line2");
-            }, 5000);
-        }, 1000);
-    
-        setTimeout(() => {
-            $("#sets").fadeToggle(10000);
-            setTimeout(() => {
-                $("[id=line]").toggleClass("line");
-            }, 7000);
-        }, 45000);
+            $(".skills-for-mobile").fadeIn(9000);
+        }, 37000);
+
     });
 
 }else{

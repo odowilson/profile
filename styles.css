@@ -131,6 +131,10 @@ a{
     margin-bottom: 70px;
 }
 
+.works-icon{
+    stroke-width: 1.5px;
+}
+
 .contents{
     width: 700px;
     display: flex;
@@ -548,6 +552,12 @@ footer{
 
 @media only screen and (max-width: 768px) {
 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     h1{
         font-family: 'Jura', sans-serif;
         font-weight: 300;
@@ -660,26 +670,60 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 85vh;
     }
     
     .beside-content{
         margin-left: 0;
+        margin: 0;
+        height: fit-content;
+        width: 100vw;
+        padding-top: 7px;
+        background-color: black;
     }
     
+    .beside-content div{
+        height: fit-content;
+        margin: 0;
+    }
+
     #sidebar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        height: fit-content;
         background-color: black;
         align-self: flex-end;
+        margin: 0;
     }
     
     #sidebar div{
-        margin-top: 60px;
+        margin-top: 0px;
         margin-bottom: 0px;
+        height: fit-content;
+    }
+
+    .side-icon{
+        height: 27px;
+        width: 27px;
+        stroke-width: 2px;
+    }
+
+    .place{
+        stroke: white;
+        position: relative;
+        bottom: -1px;
+        height: 25px;
+        width: 25px;
+        stroke-width: 2px;
+    }
+
+    .works-icon{
+        position: relative;
+        bottom: 3px;
+        height: 37px;
+        width: 37px;
+        stroke-width: 3px;
     }
     
     .contents{
@@ -701,8 +745,8 @@ footer{
         margin-bottom: 80px;
         padding-right: 0px;
         text-align: left;
-        padding: 0 10px 0 0;
-        width: 500px;
+        padding: 0 0px 0 0;
+        width: 93vw;
     }
     
     .hello{
@@ -715,79 +759,77 @@ footer{
 
     .mobileHello{
         text-align: left;
+        padding-right: 0px;
     }
 
     .mobileHello p{
-        font-size: 14px;
+        font-size: 14.5px;
         line-height: 25px;
     }
 
-    .mobileHello1{
+    .skills-for-mobile{
+        margin-top: 40px;
+    }
+
+    .node{
+        position: relative;
+        padding: 20px 50px;
+        display: block;
+        width: 200px;
         overflow: hidden;
-        animation: Hello1 3s steps(16);
-        white-space: nowrap;
-        width: 10.5ch;
-        border-right: none;
-        margin-left: 0;
     }
 
-    @keyframes Hello1{
-        0%{
-            width: 0ch;
-            border-right: 2px solid white;
-        }
-        /* 99%{
-            width: 8ch;
-            border-right: 2px solid white;
-        } */
-        100%{
-            width: 10ch;
-            border-right: 2px solid white;
-        }
-    }
-
-    .mobileHello2{
+    .node span{
+        position: relative;
+        z-index: 1;
+        color: white;
         overflow: hidden;
-        animation: Hello2 7s steps(34);
-        white-space: nowrap;
-        width: 29ch;
-        border-right: none;
-        margin-left: 0;
     }
 
-    @keyframes Hello2{
+    .node .water{
+        position: absolute;
+        left: 0;
+        top: -40px;
+        width: 130px;
+        height: 100px;
+        background: #4973ff;
+        box-shadow: inset 0 0 50px rgba(0,0,0, .5);
+        transition: 0.5s;
+    }
+
+    .node .water:before,
+    .node .water:after{
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -75%);
+    }
+
+    .node .water:before{
+        border-radius: 40%;
+        background: rgba(20, 20,20, 1);
+        animation: flow 5s linear infinite;
+    }
+
+    .node .water:after{
+        border-radius: 40%;
+        background: black;
+        animation: flow 5s linear infinite;
+    }
+
+    @keyframes flow{
         0%{
-            width: 0ch;
-            border-right: 2px solid white;
+            transform: translate(-50%, -75%) rotate(0deg);
         }
-        
         100%{
-            width: 30ch;
-            border-right: 2px solid white;
+            transform: translate(-50%, -75%) rotate(360deg);
         }
     }
 
-    .mobileHello3{
-        overflow: hidden;
-        animation: Hello3 7s steps(26);
-        white-space: nowrap;
-        width: 26ch;
-        border-right: none;
-        margin-left: 0;
-    }
-
-    @keyframes Hello3{
-        0%{
-            width: 0ch;
-            border-right: 2px solid white;
-        }
-        
-        100%{
-            width: 26ch;
-            border-right: 2px solid white;
-        }
-    }
-
+/* //////////////////////////////////////////////////////////////////// */
     #sets{
         display: flex;
         flex-direction: row;
@@ -847,10 +889,6 @@ footer{
     
     .portfolio:hover{
         cursor: none;
-    }
-    
-    .place{
-        stroke: white;
     }
     
     #line{
