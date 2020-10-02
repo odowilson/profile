@@ -8,7 +8,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 if (isMobile===true) {
     
     $(".hello").remove();
-    $(".beside-content").remove();
+    $("footer").remove();
 
     $(document).ready(function() {
         $("#sets").hide();

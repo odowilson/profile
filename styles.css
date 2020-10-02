@@ -649,11 +649,13 @@ a{
         flex-direction: row;
         justify-content: flex-start;
         background-color: black;
+        height: 10vh;
     }
     
     .cantacon{
         height: 37px;
         width: 37px;
+        margin: 13px 20px 0 20px;
     }
 
     #navBar h3{
@@ -661,14 +663,14 @@ a{
     }
     
     #navBar div{
-        margin: 25px 25px;
+        margin: 0;
     }
     
     .cont{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: fit-content;
+        height: 90vh;
     }
     
     .beside-content{
@@ -893,7 +895,7 @@ a{
        
     }
 
-    .footer{
+    /* .footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -907,7 +909,7 @@ a{
 
     .footer-icon{
         margin: 0 20px;
-    }
+    } */
 }
 
 
