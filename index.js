@@ -43,6 +43,7 @@ if (isMobile===true) {
     });
 
 }else{
+    $(".skills-for-mobile").remove();
     $(document).ready(function() {
         $("#sets").hide();
         $(".panel").hide();
