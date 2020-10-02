@@ -241,12 +241,6 @@ a{
    
 }
 
-footer{
-    margin: 0 600px;
-}
-
-
-
 /* Services Page */
 
 
@@ -558,6 +552,10 @@ footer{
         box-sizing: border-box;
     }
 
+    body{
+        overflow: hidden;
+    }
+
     h1{
         font-family: 'Jura', sans-serif;
         font-weight: 300;
@@ -614,7 +612,7 @@ footer{
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         padding: 8rem;
         z-index: 1001;
         opacity: 0.8;
@@ -670,7 +668,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 75vh;
+        height: fit-content;
     }
     
     .beside-content{
@@ -742,7 +740,7 @@ footer{
     
     .intro{
         margin-top: 1.5rem;
-        margin-bottom: 80px;
+        margin-bottom: 0px;
         padding-right: 0px;
         text-align: left;
         padding: 0 0px 0 0;
@@ -895,6 +893,20 @@ footer{
        
     }
 
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        height: fit-content;
+        margin-bottom: 0;
+        margin-left: 0;
+
+    }
+
+    .footer-icon{
+        margin: 0 20px;
+    }
 }
 
 

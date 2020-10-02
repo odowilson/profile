@@ -8,6 +8,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 if (isMobile===true) {
     
     $(".hello").remove();
+    $(".beside-content").remove();
 
     $(document).ready(function() {
         $("#sets").hide();
@@ -44,6 +45,7 @@ if (isMobile===true) {
 
 }else{
     $(".skills-for-mobile").remove();
+    $(".footer").remove();
     $(document).ready(function() {
         $("#sets").hide();
         $(".panel").hide();
