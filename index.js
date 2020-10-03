@@ -15,7 +15,7 @@ if (isMobile===true) {
     $(document).ready(function() {
         $("#sets").hide();
         $(".panel").hide();
-        $("#contactIcons").fadeOut();
+        $("#contactIcons").hide();
         $("#hoverEffects").hide();
         $(".name").hide();
         $("[id=homma]").hide();
@@ -57,10 +57,6 @@ if (isMobile===true) {
 
     });
 
-    $('.carousel').carousel({
-        interval: 5000
-    })
-
     $("#contact").click(function () {
         $(".contactArrow").addClass("Arrow");
         $("#hoverEffects").show(2000);
@@ -72,6 +68,10 @@ if (isMobile===true) {
             $("#contactIcons").fadeToggle(3000);
         }, 9000);
     })
+
+    $('.carousel').carousel({
+        interval: 5000
+    });
 
 }else{
     $(".works-for-mobile").remove();
