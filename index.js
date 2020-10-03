@@ -8,7 +8,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 if (isMobile===true) {
     
     $(".hello").remove();
-    $("footer").remove();
+    $("beside-content-work").remove();
+    $(".cont-work").remove();
+    $(".beside-content").remove();
 
     $(document).ready(function() {
         $("#sets").hide();
@@ -20,6 +22,7 @@ if (isMobile===true) {
         $(".hello").remove();
         $(".mobileHello").hide();
         $(".skills-for-mobile").hide();
+        $(".footer").hide();
     
         setTimeout(function(){
             $('#loading-screen').remove();
@@ -41,11 +44,41 @@ if (isMobile===true) {
             $(".skills-for-mobile").fadeIn(9000);
         }, 37000);
 
+        setTimeout(() => {
+            $(".footer").fadeIn(3000);
+        }, 44000);
+
+        setTimeout(() => {
+            $(".panel").fadeIn(10000);
+            setTimeout(() => {
+                $("#line2").toggleClass("line2");
+            }, 5000);
+        }, 1000);
+
     });
 
+    $('.carousel').carousel({
+        interval: 5000
+    })
+
+    $("#contact").click(function () {
+        $(".contactArrow").addClass("Arrow");
+        $("#hoverEffects").show(2000);
+        setTimeout(() => {
+            $(".contactArrow").removeClass("Arrow");
+            $("#hoverEffects").remove();
+        }, 9000);
+        setTimeout(() => {
+            $("#contactIcons").fadeToggle(3000);
+        }, 9000);
+    })
+
 }else{
-    $(".skills-for-mobile").remove();
+    $(".works-for-mobile").remove();
     $(".footer").remove();
+    $("#carouselExampleSlidesOnly").remove();
+    $("#bootstrap").remove();
+
     $(document).ready(function() {
         $("#sets").hide();
         $(".panel").hide();
