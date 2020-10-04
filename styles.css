@@ -1188,14 +1188,94 @@ a:hover
         transition-delay: 0.75s;
     }
 
+    #my-card{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid white;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    #my-card .upper-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Comp-Card-Title{
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+    }
+
+    #comp-card-icon{
+        position: relative;
+        top: 6px;
+    }
+
+    .Comp-Card-Title h1{
+        
+    }
+
+    .Comp-Card-Title div{
+        position: relative;
+        top: -20px;
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+
+    .Comp-Card-Title div p{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    video{
+        position: relative;
+        right: 80px;
+        height: 140px;
+        width: 300px;
+        z-index: 1;
+    }
+
+    .underline{
+        stroke-dasharray: 180;
+        stroke-dashoffset: 0;
+        animation: underliner 17s linear alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes underliner{
+        to{
+            stroke-dashoffset: 180;
+        }
+    }
+
+    .Comp-card-bottom{
+
+    }
+
+    .commenter{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .commenter p{
+        position: relative;
+        top: -15px;
+        font-size: 10px;
+    }
 
     .social-container{
         position: relative;
+        top: -10px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-        margin-bottom: 140px;
+        justify-content: space-between;
+        width: 130px;
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
     .whatsapp{
@@ -1203,8 +1283,8 @@ a:hover
         border: chartreuse 2px solid;
         box-shadow: 0 0 15px chartreuse,
                     inset 0 0 5px chartreuse;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1220,8 +1300,8 @@ a:hover
 
     .social-base{
         background: black;
-        width: 30px;
-        height: 30px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1234,8 +1314,8 @@ a:hover
         border: 2px solid #1DA1F2;
         box-shadow: 0 0 15px #1DA1F2,
                     inset 0 0 5px #1DA1F2;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1245,11 +1325,11 @@ a:hover
 
     .instagram{
         background: black;
-        border: 2px solid #e4405f;
-        box-shadow: 0 0 15px #e4405f,
-                    inset 0 0 2px #e4405f;
-        width: 40px;
-        height: 40px;
+        border: 2px solid #C13584;
+        box-shadow: 0 0 15px #C13584,
+                    inset 0 0 2px #C13584;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -1262,11 +1342,12 @@ a:hover
 
     #progressbar{
         position: fixed;
-        top: 0;
+        top: 10vh;
         right: 0;
         width: 5px;
         background: linear-gradient(0deg, #24c6dc , #514a9d);
         border-radius: 8px;
+        z-index: 4;
     }
 
 
