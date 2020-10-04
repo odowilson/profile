@@ -1188,6 +1188,89 @@ a:hover
         transition-delay: 0.75s;
     }
 
+
+    .social-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+
+    .whatsapp{
+        background: black;
+        border: chartreuse 2px solid;
+        box-shadow: 0 0 15px chartreuse,
+                    inset 0 0 5px chartreuse;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .{
+        animation: color 5s infinite;
+        animation-delay: 10s;
+    }
+
+
+
+    .social-base{
+        background: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .twitter{
+        background: black;
+        border: 2px solid #1DA1F2;
+        box-shadow: 0 0 15px #1DA1F2,
+                    inset 0 0 5px #1DA1F2;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .instagram{
+        background: black;
+        border: 2px solid #e4405f;
+        box-shadow: 0 0 15px #e4405f,
+                    inset 0 0 2px #e4405f;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ::-webkit-scrollbar{
+        width: 12px;
+    }
+
+    #progressbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 5px;
+        background: linear-gradient(0deg, #24c6dc , #514a9d);
+        border-radius: 8px;
+    }
+
+
+
 }
 
 

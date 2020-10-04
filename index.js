@@ -11,6 +11,15 @@ if (isMobile===true) {
     $("beside-content-work").remove();
     $(".cont-work").remove();
     $(".beside-content").remove();
+    $("#letter").remove();
+
+    $(window).scroll(function() {
+        var Scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(window).height();
+        scrollPercent = (Scroll/ (dh-wh))*100;
+        $("#progressbar").css("height", scrollPercent + "%");
+    });
 
     $(document).ready(function() {
         $("#sets").hide();
@@ -46,7 +55,7 @@ if (isMobile===true) {
 
         setTimeout(() => {
             $(".footer").fadeIn(3000);
-        }, 44000);
+        }, 40000);
 
         setTimeout(() => {
             $(".panel").fadeIn(10000);
@@ -54,6 +63,10 @@ if (isMobile===true) {
                 $("#line2").toggleClass("line2");
             }, 5000);
         }, 1000);
+
+        setTimeout(() => {
+            $("#contactIcons").fadeIn(3000);
+        }, 37000);
 
     });
 
