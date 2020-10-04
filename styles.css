@@ -602,6 +602,12 @@ a:hover
         font-family: 'Open Sans', sans-serif;
     }
 
+    a:hover {
+    color: rgb(146, 146, 146); 
+    text-decoration:none; 
+    cursor:pointer;  
+    }
+
     #symbol{
         position: absolute;
         top: 50%;
@@ -647,9 +653,7 @@ a:hover
         animation: sign 16s linear;
     }
     
-    a:hover {
-        text-decoration: none;
-    }
+    
 
     #navBar{
         display: flex;
@@ -774,8 +778,10 @@ a:hover
     }
 
     .mobileHello p{
-        font-size: 14.5px;
-        line-height: 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 28px;
     }
 
 
