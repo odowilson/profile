@@ -12,6 +12,8 @@ if (isMobile===true) {
     $(".cont-work").remove();
     $(".beside-content").remove();
     $("#letter").remove();
+    $(".my-card-base").hide();
+    $(".contactArrow").addClass("position1")
 
     $(window).scroll(function() {
         var Scroll = $(window).scrollTop(),
@@ -32,6 +34,7 @@ if (isMobile===true) {
         $(".mobileHello").hide();
         $(".skills-for-mobile").hide();
         $(".footer").hide();
+        $(".for-services").hide();
     
         setTimeout(function(){
             $('#loading-screen').remove();
@@ -55,7 +58,7 @@ if (isMobile===true) {
 
         setTimeout(() => {
             $(".footer").fadeIn(3000);
-        }, 40000);
+        }, 37000);
 
         setTimeout(() => {
             $(".panel").fadeIn(10000);
@@ -63,6 +66,10 @@ if (isMobile===true) {
                 $("#line2").toggleClass("line2");
             }, 5000);
         }, 1000);
+
+        setTimeout(() => {
+            $(".for-services").fadeIn(3000);
+        }, 8000);
 
         setTimeout(() => {
             $("#contactIcons").fadeIn(3000);
@@ -78,7 +85,12 @@ if (isMobile===true) {
             $("#hoverEffects").remove();
         }, 9000);
         setTimeout(() => {
-            $("#contactIcons").fadeToggle(3000);
+            $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
+            $("#my-card").addClass("blur");
+            setInterval(() => {
+                $("#my-card").removeClass("blur", 2000, "easeInOutElastic");  
+            }, 5000);
+            $(".my-card-base").slideToggle(3000);
         }, 9000);
     })
 
@@ -91,6 +103,8 @@ if (isMobile===true) {
     $(".footer").remove();
     $("#carouselExampleSlidesOnly").remove();
     $("#bootstrap").remove();
+    $("#my-card").remove();
+    $(".foot").remove();
 
     $(document).ready(function() {
         $("#sets").hide();

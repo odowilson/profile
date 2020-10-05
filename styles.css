@@ -1021,12 +1021,15 @@ a:hover
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
     }
     
     .panel{
         margin-left: 20px;
         width: 300px;
         animation: 5s ease-in linear;
+        margin-right: 0;
+        height: 80vh;
     }
     
     .s{
@@ -1045,16 +1048,28 @@ a:hover
         font-weight: 200;
         font-size: smaller;
         line-height: 24px;
+        width: 300px;
     }
     
     #contact{
-        margin-top: 10px;
-        margin-left: 153px;
-        margin-right: 270px;
-        margin-bottom: 20px;
-        transform: rotate(90deg);
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        transform: rotate(0deg);
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
     }
     
+    .position1{
+        transform: rotate(90deg);
+    }
+
+    .reposition{
+        transform: rotate(270deg);
+    }
+
     #contact:hover{
         cursor: pointer;
     }
@@ -1188,13 +1203,22 @@ a:hover
         transition-delay: 0.75s;
     }
 
+    .my-card-base{
+        padding: 2px;
+        background: linear-gradient(235deg, #2196f3, #010615, #2196f3);
+        margin-bottom: 40px;
+    }
+
+    .blur{
+        filter: blur(3px);
+    }
+
     #my-card{
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border: 1px solid white;
         overflow: hidden;
-        margin-top: 30px;
+        background-color: black;
     }
 
     #my-card .upper-div{
@@ -1225,6 +1249,8 @@ a:hover
     }
 
     .Comp-Card-Title div p{
+        position: relative;
+        left: 7px;
         font-size: 12px;
         letter-spacing: 1px;
     }
@@ -1238,17 +1264,19 @@ a:hover
     }
 
     .underline{
+        position: relative;
+        left: 0px;
+        top: -8px;
         stroke-dasharray: 180;
         stroke-dashoffset: 0;
         animation: underliner 17s linear alternate;
-        animation-iteration-count: infinite;
     }
 
-    @keyframes underliner{
+    /* @keyframes underliner{
         to{
             stroke-dashoffset: 180;
         }
-    }
+    } */
 
     .Comp-card-bottom{
 
