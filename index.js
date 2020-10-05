@@ -35,6 +35,7 @@ if (isMobile===true) {
         $(".skills-for-mobile").hide();
         $(".footer").hide();
         $(".for-services").hide();
+        $(".needed-margin").hide();
     
         setTimeout(function(){
             $('#loading-screen').remove();
@@ -91,6 +92,9 @@ if (isMobile===true) {
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
         }, 14000);
+        setTimeout(() => {
+            $(".needed-margin").fadeIn(2000);
+        }, 17000);
     })
 
     $('.carousel').carousel({

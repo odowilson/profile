@@ -1060,6 +1060,10 @@ a:hover
         justify-content: center;
         padding-left: 50px;
     }
+
+    .needed-margin{
+        margin-top: 30px;
+    }
     
     .position1{
         transform: rotate(90deg);
