@@ -65,11 +65,7 @@ if (isMobile===true) {
             setTimeout(() => {
                 $("#line2").toggleClass("line2");
             }, 5000);
-        }, 1000);
-
-        setTimeout(() => {
-            $(".for-services").fadeIn(3000);
-        }, 8000);
+        }, 1000)
 
         setTimeout(() => {
             $("#contactIcons").fadeIn(3000);
@@ -92,6 +88,9 @@ if (isMobile===true) {
             }, 5000);
             $(".my-card-base").slideToggle(3000);
         }, 9000);
+        setTimeout(() => {
+            $(".for-services").fadeIn(3000);
+        }, 14000);
     })
 
     $('.carousel').carousel({
