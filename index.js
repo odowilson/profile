@@ -13,7 +13,9 @@ if (isMobile===true) {
     $(".beside-content").remove();
     $("#letter").remove();
     $(".contactArrow").addClass("position1");
+    $(".fordesktop").remove();
     $(".movepage").addClass("shiftout")
+    $(".my-card-base").hide();
 
     $(window).scroll(function() {
         var Scroll = $(window).scrollTop(),
@@ -80,18 +82,35 @@ if (isMobile===true) {
         setTimeout(() => {
             $(".contactArrow").removeClass("Arrow");
             $("#hoverEffects").remove();
-        }, 9000);
+        }, 7000);
         setTimeout(() => {
             $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
             $(".cont").toggleClass("focuseffect");
-        }, 9000);
+            $(".panel").toggleClass("focuseffect");
+        }, 7000);
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
         }, 14000);
         setTimeout(() => {
             $(".needed-margin").fadeIn(2000);
         }, 17000);
+    })
+
+    $("#works-contact").click(function () {
+        $(".contactArrow").addClass("Arrow");
+        $("#hoverEffects").show(2000);
+        setTimeout(() => {
+            $(".contactArrow").removeClass("Arrow");
+            $("#hoverEffects").remove();
+        }, 7000);
+        setTimeout(() => {
+            $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
+            $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
+            $(".cont").toggleClass("focuseffect");
+            $(".panel").toggleClass("focuseffect");
+        }, 7000);
+        
     })
 
     $('.carousel').carousel({
