@@ -778,7 +778,7 @@ a:hover
 
     .mobileHello{
         text-align: left;
-        padding-right: 10px;
+        padding-right: 0px;
         height: fit-content;
     }
 
@@ -1153,7 +1153,7 @@ a:hover
 
     .reposition{
         transform: rotate(180deg);
-        margin-left: 280px;
+        margin-left: 300px;
     }
 
     #contact:hover{
