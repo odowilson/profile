@@ -688,6 +688,10 @@ a:hover
         margin-right: 0;
     }
     
+    .focuseffect{
+        filter: blur(3px);
+    }
+
     .beside-content{
         margin-left: 0;
         margin: 0;
@@ -728,8 +732,8 @@ a:hover
         stroke: white;
         position: relative;
         bottom: -1px;
-        height: 25px;
-        width: 25px;
+        height: 28px;
+        width: 28px;
         stroke-width: 2px;
     }
 
@@ -775,6 +779,7 @@ a:hover
     .mobileHello{
         text-align: left;
         padding-right: 10px;
+        height: fit-content;
     }
 
     .mobileHello p{
@@ -782,6 +787,7 @@ a:hover
         font-weight: 200;
         font-size: 16px;
         line-height: 28px;
+        margin-bottom: 0;
     }
 
 
@@ -919,7 +925,7 @@ a:hover
 
     }
 
-    .footer-icon{
+    .movepage-icon{
         margin: 0 20px 0 20px;
     }
 
@@ -995,21 +1001,94 @@ a:hover
        
     }
 
-    .footer{
+    .movepage{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100vw;
-        height: fit-content;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        padding-top: 40px;
+        padding-right: 0;
+        width: 77vw;
+        height: 70vh;
+        opacity: 0.83;
+        z-index: 2000;
+        border-right: 1px solid rgb(82, 81, 81);
+        border-bottom: 1px solid rgb(82, 81, 81);
+    }
+
+    .shiftout{
+        position: absolute;
+        top: 10vh;
+        left: -100vw;
+    }
+
+    .shiftin{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+    }
+
+    .allrights{
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        text-align: center;
+        height: 100vh;
         margin-right: 0;
+        margin-left: 25px;
+        margin-bottom: 0;
+        margin-top: 107px;
+        
+    }
+
+    h5{
+        size: 70px;
+        font-family: 'spinnaker', sans-serif;
+        font-weight: 100;
+        margin: 0;
+        color: white;
+    }
+
+    .quote{
+        margin-bottom: 20px;
+    }
+
+    .quote h5{
+        size: 0.1px;
+        line-height: 20px;
+        font-weight: 200;
+        font-family: 'Poppins', sans-serif
+    }
+
+    .quote1{
 
     }
 
-    .footer-icon{
-        margin: 0 20px 0 20px;
+    .quote1 h5{
+        size: 0.1px;
+        line-height: 20px;
+        font-weight: 200;
+        font-family: 'Poppins', sans-serif
+    }
+
+    .movepage-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 77vw;
+        height: fit-content;
+        margin-bottom: 0;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0;
+        padding: 10px 10px 10px 10px;
+        background-color: black;
+        z-index: 2003;
+        border-right: 1px solid rgb(82, 81, 81);
+    }
+
+    .movepage-icon{
+        margin: 40px 20px 0 20px;
     }
 
 
@@ -1057,8 +1136,11 @@ a:hover
         margin-bottom: 0px;
         transform: rotate(0deg);
         display: flex;
-        justify-content: center;
-        padding-left: 50px;
+        justify-content: flex-start;
+        padding-left: 30px;
+        position: absolute;
+        top: 70vh;
+        left: 0;
     }
 
     .needed-margin{
@@ -1066,11 +1148,12 @@ a:hover
     }
     
     .position1{
-        transform: rotate(90deg);
+        transform: rotate(0deg);
     }
 
     .reposition{
-        transform: rotate(270deg);
+        transform: rotate(180deg);
+        margin-left: 280px;
     }
 
     #contact:hover{
@@ -1207,9 +1290,10 @@ a:hover
     }
 
     .my-card-base{
-        padding: 2px;
-        background: linear-gradient(235deg, #2196f3, #010615, #2196f3);
+        padding: 3px;
+        background: linear-gradient(235deg, #fff, #010615, #fff);
         margin-bottom: 10px;
+        border-radius: 10px;
     }
 
     .for-services{
@@ -1226,6 +1310,7 @@ a:hover
         padding: 10px;
         overflow: hidden;
         background-color: black;
+        border-radius: 10px;
     }
 
     #my-card .upper-div{

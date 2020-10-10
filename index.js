@@ -12,8 +12,8 @@ if (isMobile===true) {
     $(".cont-work").remove();
     $(".beside-content").remove();
     $("#letter").remove();
-    $(".my-card-base").hide();
-    $(".contactArrow").addClass("position1")
+    $(".contactArrow").addClass("position1");
+    $(".movepage").addClass("shiftout")
 
     $(window).scroll(function() {
         var Scroll = $(window).scrollTop(),
@@ -83,11 +83,8 @@ if (isMobile===true) {
         }, 9000);
         setTimeout(() => {
             $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
-            $("#my-card").addClass("blur");
-            setInterval(() => {
-                $("#my-card").removeClass("blur", 2000, "easeInOutElastic");  
-            }, 5000);
-            $(".my-card-base").slideToggle(3000);
+            $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
+            $(".cont").toggleClass("focuseffect");
         }, 9000);
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
