@@ -127,7 +127,7 @@ if (isMobile===true) {
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
             $("#carouselExampleSlidesOnly").toggleClass("focuseffect");
             $("#navBar-work").toggleClass("focuseffect");
-        }, 5000);
+        }, 3000);
         
     })
 
