@@ -17,6 +17,8 @@ if (isMobile===true) {
     $(".movepage").addClass("shiftout");
     $(".my-card-base").hide();
     $(".X").hide();
+    $(".Y").hide();
+    $(".nava").hide();
 
     $(window).scroll(function() {
         var Scroll = $(window).scrollTop(),
@@ -61,15 +63,24 @@ if (isMobile===true) {
         }, 37000);
 
         setTimeout(() => {
-            $("X").fadeIn(3000);
+            $(".X").fadeIn(3000);
+        }, 17560);
+
+        setTimeout(() => {
+            $(".Y").fadeIn(3000);
         }, 1000);
 
         setTimeout(() => {
-            $(".panel").fadeIn(6000);
+            $(".panel").fadeIn(3000);
+            $("#works-contact").fadeIn(3500);
             setTimeout(() => {
                 $("#line2").toggleClass("line2");
             }, 5000);
         }, 1000)
+
+        setTimeout(() => {
+            $(".nava").fadeIn(3000)
+        }, 1000);
 
         setTimeout(() => {
             $(".my-card-base").fadeIn(3000)
@@ -131,6 +142,9 @@ if (isMobile===true) {
     $("#bootstrap").remove();
     $("#my-card").remove();
     $(".foot").remove();
+    $(".movepage").remove();
+    $("#contact").remove();
+    $("#works-contact").remove();
 
     $(document).ready(function() {
         $("#sets").hide();
@@ -173,7 +187,7 @@ if (isMobile===true) {
         }, 45000);
     });
     
-    $("#contact").click(function () {
+    $("#desktopcontact").click(function () {
         $(".contactArrow").addClass("Arrow");
         $("#hoverEffects").show(2000);
         setTimeout(() => {

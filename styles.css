@@ -9,6 +9,13 @@ body{
     background-color: #030303;
 }
 
+div{
+    -webkit-tap-highlight-color:transparent;
+    -moz-tap-highlight-color:transparent;
+    -o-tap-highlight-color:transparent;
+    -tap-highlight-color:transparent;
+}
+
 h1{
     font-family: 'Jura', sans-serif;
     font-weight: 300;
@@ -58,10 +65,10 @@ a:hover
 #symbol{
     position: absolute;
     top: 46%;
-    left: 16%;
+    left: 10%;
     transform: translate(-50%, -50%);
     z-index: 1001;
-    font-size: 38px;
+    font-size: 23px;
     font-weight: 300;
 }
 
@@ -89,7 +96,9 @@ a:hover
 .signature{
     stroke-dasharray: 200;
     stroke-dashoffset: 800;
-    animation: sign 16s linear;
+    animation: sign 19s linear;
+    width: 72;
+    height: 76; 
 }
 
 @keyframes sign{
@@ -282,13 +291,13 @@ a:hover
     line-height: 24px;
 }
 
-#contact{
+#desktopcontact{
     margin-top: 80px;
     margin-left: 200px;
     margin-right: 270px;
 }
 
-#contact:hover{
+#desktopcontact:hover{
     cursor: pointer;
 }
 
@@ -640,7 +649,7 @@ a:hover
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1001;
-        font-size: 38px;
+        font-size: 28px;
         font-weight: 300;
     }
     
@@ -676,7 +685,9 @@ a:hover
         transform: translate(-50%, -50%);
         stroke-dasharray: 200;
         stroke-dashoffset: 800;
-        animation: sign 16s linear;
+        animation: sign 20s linear;
+        width: 72;
+        height: 96; 
     }
     
     
@@ -1227,8 +1238,12 @@ a:hover
         justify-content: flex-start;
         padding-left: 30px;
         position: absolute;
-        top: 70vh;
+        top: 78vh;
         left: 0;
+        -webkit-tap-highlight-color:transparent;
+        -moz-tap-highlight-color:transparent;
+        -o-tap-highlight-color:transparent;
+        -tap-highlight-color:transparent;
     }
 
     .cardprompt{
@@ -1503,6 +1518,10 @@ a:hover
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    i{
+      color: white;  
     }
 
     .{
