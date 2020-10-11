@@ -14,8 +14,9 @@ if (isMobile===true) {
     $("#letter").remove();
     $(".contactArrow").addClass("position1");
     $(".fordesktop").remove();
-    $(".movepage").addClass("shiftout")
+    $(".movepage").addClass("shiftout");
     $(".my-card-base").hide();
+    $(".X").hide();
 
     $(window).scroll(function() {
         var Scroll = $(window).scrollTop(),
@@ -44,31 +45,35 @@ if (isMobile===true) {
             $(".loader").remove();
             $("#signature").remove();
             $("#symbol").remove();
-            $("[id=homma]").fadeIn(4000);
+            $("[id=homma]").fadeIn(3000);
         }, 10000);
 
         setTimeout(() => {
             $(".name").fadeIn(3000);
-        }, 17000);
+        }, 14500);
 
         setTimeout(() => {
-            $(".mobileHello").fadeIn(7000);
-        }, 26000);
+            $(".mobileHello").fadeIn(3000);
+        }, 14500);
 
         setTimeout(() => {
             $(".skills-for-mobile").fadeIn(9000);
         }, 37000);
 
         setTimeout(() => {
-            $(".footer").fadeIn(3000);
-        }, 37000);
+            $("X").fadeIn(3000);
+        }, 1000);
 
         setTimeout(() => {
-            $(".panel").fadeIn(10000);
+            $(".panel").fadeIn(6000);
             setTimeout(() => {
                 $("#line2").toggleClass("line2");
             }, 5000);
         }, 1000)
+
+        setTimeout(() => {
+            $(".my-card-base").fadeIn(3000)
+        }, 3563);
 
         setTimeout(() => {
             $("#contactIcons").fadeIn(3000);
@@ -88,7 +93,9 @@ if (isMobile===true) {
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
             $(".cont").toggleClass("focuseffect");
             $(".panel").toggleClass("focuseffect");
-        }, 7000);
+            $("#navBar").toggleClass("focuseffect");
+            $(".my-card-base").toggleClass("focuseffect");
+        }, 5000);
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
         }, 14000);
@@ -107,9 +114,9 @@ if (isMobile===true) {
         setTimeout(() => {
             $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
-            $(".cont").toggleClass("focuseffect");
-            $(".panel").toggleClass("focuseffect");
-        }, 7000);
+            $("#carouselExampleSlidesOnly").toggleClass("focuseffect");
+            $("#navBar-work").toggleClass("focuseffect");
+        }, 5000);
         
     })
 
