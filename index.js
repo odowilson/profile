@@ -106,7 +106,7 @@ if (isMobile===true) {
             $(".panel").toggleClass("focuseffect");
             $("#navBar").toggleClass("focuseffect");
             $(".my-card-base").toggleClass("focuseffect");
-        }, 5000);
+        }, 3000);
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
         }, 14000);
