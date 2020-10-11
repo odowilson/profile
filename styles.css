@@ -822,6 +822,7 @@ a:hover
         text-align: left;
         padding-right: 0px;
         height: fit-content;
+
     }
 
     .mobileHello p{
@@ -830,6 +831,7 @@ a:hover
         font-size: 16px;
         line-height: 28px;
         margin-bottom: 0;
+        width: 339px;
     }
 
 
