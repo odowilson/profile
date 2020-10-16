@@ -1051,14 +1051,14 @@ a:hover
     .line{
         stroke-dasharray: 80;
         stroke-dashoffset: 80;
-        animation: underline 8s linear;
+        animation: underline 7s linear;
         animation-iteration-count: infinite;
     }
     
     #line2{
         stroke-dasharray: 80;
         stroke-dashoffset: 80;
-        animation: underline 8s linear;
+        animation: underline 7s linear;
         animation-iteration-count: infinite;
     }
     
@@ -1274,7 +1274,7 @@ a:hover
     .Arrow{
         stroke-dasharray: 80;
         stroke-dashoffset: 80;
-        animation: move 1.83s linear alternate;
+        animation: move 1.5s linear alternate;
         animation-iteration-count: infinite;
     }
     
