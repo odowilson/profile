@@ -1274,7 +1274,7 @@ a:hover
     .Arrow{
         stroke-dasharray: 80;
         stroke-dashoffset: 80;
-        animation: move 3s linear alternate;
+        animation: move 1.83s linear alternate;
         animation-iteration-count: infinite;
     }
     

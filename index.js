@@ -98,7 +98,7 @@ if (isMobile===true) {
         setTimeout(() => {
             $(".contactArrow").removeClass("Arrow");
             $("#hoverEffects").remove();
-        }, 7000);
+        }, 2123);
         setTimeout(() => {
             $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
@@ -106,7 +106,7 @@ if (isMobile===true) {
             $(".panel").toggleClass("focuseffect");
             $("#navBar").toggleClass("focuseffect");
             $(".my-card-base").toggleClass("focuseffect");
-        }, 3000);
+        }, 2000);
         setTimeout(() => {
             $(".for-services").fadeIn(3000);
         }, 14000);
@@ -121,18 +121,18 @@ if (isMobile===true) {
         setTimeout(() => {
             $(".contactArrow").removeClass("Arrow");
             $("#hoverEffects").remove();
-        }, 7000);
+        }, 2123);
         setTimeout(() => {
             $(".contactArrow, .position, .reposition").toggleClass("position1 reposition");
             $(".movepage, .shiftout, .shiftin").toggleClass("shiftout shiftin");
             $("#carouselExampleSlidesOnly").toggleClass("focuseffect");
             $("#navBar-work").toggleClass("focuseffect");
-        }, 3000);
+        }, 2000);
         
     })
 
     $('.carousel').carousel({
-        interval: 5000
+        interval: 3400
     });
 
 }else{
