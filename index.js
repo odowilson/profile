@@ -132,7 +132,7 @@ if (isMobile===true) {
     })
 
     $('.carousel').carousel({
-        interval: 2700
+        interval: 3000
     });
 
 }else{
