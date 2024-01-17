@@ -38,52 +38,52 @@ if (isMobile===true) {
             $(".loader").remove();
             $("#signature").remove();
             $("#symbol").remove();
-            $("[id=homma]").fadeIn(4000);
-        }, 10000);
+            $("[id=homma]").fadeIn(2000);
+        }, 5000);
 
         setTimeout(() => {
-            $(".name").fadeIn(3000);
-        }, 17000);
+            $(".name").fadeIn(1500);
+        }, 9000);
 
         setTimeout(() => {
-            $(".mobileHello").fadeIn(7000);
-        }, 26000);
+            $(".mobileHello").fadeIn(3500);
+        }, 13000);
 
         setTimeout(() => {
-            $(".skills-for-mobile").fadeIn(9000);
-        }, 37000);
+            $(".skills-for-mobile").fadeIn(4500);
+        }, 18000);
 
         setTimeout(() => {
-            $(".footer").fadeIn(3000);
-        }, 40000);
+            $(".footer").fadeIn(1500);
+        }, 2000);
 
         setTimeout(() => {
-            $(".panel").fadeIn(10000);
+            $(".panel").fadeIn(2500);
             setTimeout(() => {
                 $("#line2").toggleClass("line2");
-            }, 5000);
-        }, 1000);
+            }, 2500);
+        }, 500);
 
         setTimeout(() => {
-            $("#contactIcons").fadeIn(3000);
-        }, 37000);
+            $("#contactIcons").fadeIn(1500);
+        }, 18000);
 
     });
 
     $("#contact").click(function () {
         $(".contactArrow").addClass("Arrow");
-        $("#hoverEffects").show(2000);
+        $("#hoverEffects").show(1000);
         setTimeout(() => {
             $(".contactArrow").removeClass("Arrow");
             $("#hoverEffects").remove();
         }, 9000);
         setTimeout(() => {
-            $("#contactIcons").fadeToggle(3000);
-        }, 9000);
+            $("#contactIcons").fadeToggle(1500);
+        }, 4500);
     })
 
     $('.carousel').carousel({
-        interval: 5000
+        interval: 2500
     });
 
 }else{
@@ -107,49 +107,49 @@ if (isMobile===true) {
             $(".loader").remove();
             $("#signature").remove();
             $("#symbol").remove();
-            $("[id=homma]").fadeIn(4000);
-        }, 10000);
+            $("[id=homma]").fadeIn(2000);
+        }, 5000);
     
         setTimeout(() => {
-            $(".name").fadeIn(4000);
-        }, 16000);
+            $(".name").fadeIn(2000);
+        }, 8000);
     
         setTimeout(() => {
             $(".intro").show();
-        }, 23000);
+        }, 11500);
     
         setTimeout(() => {
-            $(".panel").fadeIn(10000);
+            $(".panel").fadeIn(5000);
             setTimeout(() => {
                 $("#line2").toggleClass("line2");
-            }, 5000);
-        }, 1000);
+            }, 2500);
+        }, 500);
     
         setTimeout(() => {
-            $("#sets").fadeToggle(10000);
+            $("#sets").fadeToggle(5000);
             setTimeout(() => {
                 $("[id=line]").toggleClass("line");
-            }, 7000);
-        }, 45000);
+            }, 3500);
+        }, 23000);
     });
     
     $("#contact").click(function () {
         $(".contactArrow").addClass("Arrow");
-        $("#hoverEffects").show(2000);
+        $("#hoverEffects").show(1000);
         setTimeout(() => {
             $(".contactArrow").removeClass("Arrow");
             $("#hoverEffects").remove();
-        }, 9000);
+        }, 4500);
         setTimeout(() => {
-            $("#contactIcons").fadeToggle(3000);
-        }, 9000);
+            $("#contactIcons").fadeToggle(1500);
+        }, 4500);
     })
     
     $(".portfolio").click(function() {
-        $("#sets").fadeToggle(5000);
+        $("#sets").fadeToggle(2500);
         setTimeout(() => {
             $("[id=line]").toggleClass("line");
-        }, 6000);
+        }, 3000);
     });
     
     var swiper = new Swiper('.swiper-container', {
